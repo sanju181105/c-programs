@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int length,breath;
+    cin>>length;
+    cin>>breath;
+    int perimeter=2*(length+breath);
+    int area=length*breath;
+    cout<<perimeter<<" "<<area<<endl;
+    return 0;
+}
