@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int team,student;
+    cin>>team;
+    cin>>student;
+    int students_perteam=team/student;
+    int students_perteamleft=team%student;
+    cout<<students_perteam<<endl;
+    cout<<students_perteamleft<<endl;
+    return 0;
+}
