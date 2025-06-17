@@ -1,0 +1,18 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float principal,rate,years;
+    cin>>principal;
+    cin>>rate;
+    cin>>years;
+    float intrest=(principal*rate*years)/100.0;
+    float total_amount=principal+intrest;
+    float amount=principal+intrest;
+    float discount=0.02*intrest;
+    float final_amount=total_amount-discount;
+    cout<<fixed<<setprecision(2);
+    cout<<intrest<<" "<<total_amount<<" "<<discount<<" "<<final_amount<<endl;
+    return 0;
+}
