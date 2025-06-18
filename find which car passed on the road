@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int roadA, roadB, roadC, carNum;
+    cin >> roadA >> roadB >> roadC >> carNum;
+    int lastA = roadA % 10;
+    int lastB = roadB % 10;
+    int lastC = roadC % 10;
+
+    int lastCar = carNum % 10;
+
+    if (lastCar == lastA) {
+        cout << "Car 1 goes into road A" << endl;
+    } else if (lastCar == lastB) {
+        cout << "Car 1 goes into road B" << endl;
+    } else if (lastCar == lastC) {
+        cout << "Car 1 goes into road C" << endl;
+    } else {
+        cout << "No path exists" << endl;
+    }
+
+    return 0;
+}
