@@ -1,0 +1,18 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float item1,item2,discount;
+    cin>>item1;
+    cin>>item2;
+    cin>>discount;
+    float total=item1+item2;
+    float discount_price=total-(total*discount/100);
+    float amount_saved=total-discount_price;
+    cout<<fixed<<setprecision(2);
+    cout<<total<<endl;
+    cout<<discount_price<<endl;
+    cout<<amount_saved<<endl;
+}
+    
