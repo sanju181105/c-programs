@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int min_val, max_val;
+    cin >> min_val >> max_val;
+
+    int total_sum = 0;
+    int current = min_val;
+
+    while (current <= max_val) {
+        total_sum += current;
+        current++;
+    }
+
+    cout << total_sum << endl;
+
+    return 0;
+}
