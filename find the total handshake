@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int total_handshakes = (n * (n - 1)) / 2;
+
+    cout << total_handshakes << endl;
+
+    return 0;
+}
